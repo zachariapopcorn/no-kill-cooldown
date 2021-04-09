@@ -28,12 +28,38 @@ namespace NoKillCooldown
                 __instance.SetKillTimer(0);
             }
         }
-        [HarmonyPatch(typeof(ExileController), nameof(ExileController.Method_24))]
+        [HarmonyPatch(typeof(AirshipExileController._WrapUpAndSpawn_d__11), nameof(AirshipExileController._WrapUpAndSpawn_d__11.MoveNext))]
+        public static class AirShipMeetingPatch
+        {
+            public static void Postfix()
+            {
+                var players = PlayerControl.AllPlayerControls;
+                for(int i = 0; i < players.Count; i++)
+                {
+                    var player = players[i];
+                    var playerInfo = player.Data;
+                    if(playerInfo.IsImpostor)
+                    {
+                        player.SetKillTimer(0);
+                    }
+                }
+            }
+        }
+        [HarmonyPatch(typeof(ExileController), nameof(ExileController.GALOAPAFIMJ))]
         public static class MeetingPatch
         {
             public static void Postfix()
             {
-                PlayerControl.LocalPlayer.SetKillTimer(0);
+                var players = PlayerControl.AllPlayerControls;
+                for(int i = 0; i < players.Count; i++)
+                {
+                    var player = players[i];
+                    var playerInfo = player.Data;
+                    if(playerInfo.IsImpostor)
+                    {
+                        player.SetKillTimer(0);
+                    }
+                }
             }
         }
     }
