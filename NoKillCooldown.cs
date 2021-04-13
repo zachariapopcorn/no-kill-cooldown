@@ -45,7 +45,7 @@ namespace NoKillCooldown
                 }
             }
         }
-        [HarmonyPatch(typeof(ExileController), nameof(ExileController.GALOAPAFIMJ))]
+        [HarmonyPatch(typeof(ExileController), nameof(ExileController.WrapUp))]
         public static class MeetingPatch
         {
             public static void Postfix()
