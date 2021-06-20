@@ -1,0 +1,151 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Reactor.OxygenFilter.MSBuild/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/AssemblyUnhollower.dll": {},
+          "lib/netstandard2.1/Iced.dll": {},
+          "lib/netstandard2.1/Il2CppDumper.dll": {},
+          "lib/netstandard2.1/Mono.Cecil.Mdb.dll": {},
+          "lib/netstandard2.1/Mono.Cecil.Pdb.dll": {},
+          "lib/netstandard2.1/Mono.Cecil.Rocks.dll": {},
+          "lib/netstandard2.1/Mono.Cecil.dll": {},
+          "lib/netstandard2.1/Newtonsoft.Json.dll": {},
+          "lib/netstandard2.1/Reactor.OxygenFilter.MSBuild.dll": {},
+          "lib/netstandard2.1/Reactor.OxygenFilter.dll": {},
+          "lib/netstandard2.1/UnhollowerBaseLib.dll": {},
+          "lib/netstandard2.1/UnhollowerRuntimeLib.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/AssemblyUnhollower.dll": {},
+          "lib/netstandard2.1/Iced.dll": {},
+          "lib/netstandard2.1/Il2CppDumper.dll": {},
+          "lib/netstandard2.1/Mono.Cecil.Mdb.dll": {},
+          "lib/netstandard2.1/Mono.Cecil.Pdb.dll": {},
+          "lib/netstandard2.1/Mono.Cecil.Rocks.dll": {},
+          "lib/netstandard2.1/Mono.Cecil.dll": {},
+          "lib/netstandard2.1/Newtonsoft.Json.dll": {},
+          "lib/netstandard2.1/Reactor.OxygenFilter.MSBuild.dll": {},
+          "lib/netstandard2.1/Reactor.OxygenFilter.dll": {},
+          "lib/netstandard2.1/UnhollowerBaseLib.dll": {},
+          "lib/netstandard2.1/UnhollowerRuntimeLib.dll": {}
+        },
+        "build": {
+          "build/Reactor.OxygenFilter.MSBuild.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Reactor.OxygenFilter.MSBuild.props": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Reactor.OxygenFilter.MSBuild/0.3.0": {
+      "sha512": "lddgoLK63x/IayMwOPxnE261Gg2hYSaM9v474kvymMiGessmKscWPKDrZXsZkViHUHHNMtKxwSdct3fLD31qXw==",
+      "type": "package",
+      "path": "reactor.oxygenfilter.msbuild/0.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Reactor.OxygenFilter.MSBuild.props",
+        "buildMultiTargeting/Reactor.OxygenFilter.MSBuild.props",
+        "lib/net472/AssemblyUnhollower.exe",
+        "lib/net472/Iced.dll",
+        "lib/net472/Il2CppDumper.dll",
+        "lib/net472/Mono.Cecil.Mdb.dll",
+        "lib/net472/Mono.Cecil.Pdb.dll",
+        "lib/net472/Mono.Cecil.Rocks.dll",
+        "lib/net472/Mono.Cecil.dll",
+        "lib/net472/Newtonsoft.Json.dll",
+        "lib/net472/Reactor.OxygenFilter.MSBuild.dll",
+        "lib/net472/Reactor.OxygenFilter.dll",
+        "lib/net472/UnhollowerBaseLib.dll",
+        "lib/net472/UnhollowerRuntimeLib.dll",
+        "lib/netstandard2.1/AssemblyUnhollower.dll",
+        "lib/netstandard2.1/Iced.dll",
+        "lib/netstandard2.1/Il2CppDumper.dll",
+        "lib/netstandard2.1/Mono.Cecil.Mdb.dll",
+        "lib/netstandard2.1/Mono.Cecil.Pdb.dll",
+        "lib/netstandard2.1/Mono.Cecil.Rocks.dll",
+        "lib/netstandard2.1/Mono.Cecil.dll",
+        "lib/netstandard2.1/Newtonsoft.Json.dll",
+        "lib/netstandard2.1/Reactor.OxygenFilter.MSBuild.dll",
+        "lib/netstandard2.1/Reactor.OxygenFilter.dll",
+        "lib/netstandard2.1/UnhollowerBaseLib.dll",
+        "lib/netstandard2.1/UnhollowerRuntimeLib.dll",
+        "reactor.oxygenfilter.msbuild.0.3.0.nupkg.sha512",
+        "reactor.oxygenfilter.msbuild.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Reactor.OxygenFilter.MSBuild >= 0.3.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Zacharia Ahmad\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "4.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Zacharia Ahmad\\Downloads\\Code\\C#\\No Kill Cooldown\\NoKillCooldown.csproj",
+      "projectName": "NoKillCooldown",
+      "projectPath": "C:\\Users\\Zacharia Ahmad\\Downloads\\Code\\C#\\No Kill Cooldown\\NoKillCooldown.csproj",
+      "packagesPath": "C:\\Users\\Zacharia Ahmad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Zacharia Ahmad\\Downloads\\Code\\C#\\No Kill Cooldown\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Zacharia Ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "dependencies": {
+          "Reactor.OxygenFilter.MSBuild": {
+            "target": "Package",
+            "version": "[0.3.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "NETStandard.Library": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

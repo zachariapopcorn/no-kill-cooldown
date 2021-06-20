@@ -1,5 +1,4 @@
 using BepInEx;
-using BepInEx.Configuration;
 using BepInEx.IL2CPP;
 using HarmonyLib;
 using Reactor;
@@ -12,55 +11,25 @@ namespace NoKillCooldown
     public class NoKillCooldown : BasePlugin
     {
         public const string Id = "DisableKillCooldown";
+        public static BepInEx.Logging.ManualLogSource log;
 
         public Harmony Harmony { get; } = new Harmony(Id);
 
         public override void Load()
         {
+            log = Log;
+            log.LogMessage("No Kill Cooldown has loaded");
             Harmony.PatchAll();
         }
 
-        [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.MurderPlayer))]
-        public static class KillCooldownAfterKillPatch
+        [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.SetKillTimer))]
+        public static class KillTimerPatch
         {
-            public static void Postfix(PlayerControl __instance)
+            public static void Prefix([HarmonyArgument(0)] ref float time)
             {
-                __instance.SetKillTimer(0);
+                time = 0f;
             }
         }
-        [HarmonyPatch(typeof(AirshipExileController._WrapUpAndSpawn_d__11), nameof(AirshipExileController._WrapUpAndSpawn_d__11.MoveNext))]
-        public static class AirShipMeetingPatch
-        {
-            public static void Postfix()
-            {
-                var players = PlayerControl.AllPlayerControls;
-                for(int i = 0; i < players.Count; i++)
-                {
-                    var player = players[i];
-                    var playerInfo = player.Data;
-                    if(playerInfo.IsImpostor)
-                    {
-                        player.SetKillTimer(0);
-                    }
-                }
-            }
-        }
-        [HarmonyPatch(typeof(ExileController), nameof(ExileController.WrapUp))]
-        public static class MeetingPatch
-        {
-            public static void Postfix()
-            {
-                var players = PlayerControl.AllPlayerControls;
-                for(int i = 0; i < players.Count; i++)
-                {
-                    var player = players[i];
-                    var playerInfo = player.Data;
-                    if(playerInfo.IsImpostor)
-                    {
-                        player.SetKillTimer(0);
-                    }
-                }
-            }
-        }
+
     }
 }

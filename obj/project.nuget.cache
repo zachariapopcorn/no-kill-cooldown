@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nbN8HGFPdBx2Un55hSPk6hiL6Jiy3Y06D9Rs87Q6VJlNCtLlfMapNuGjsZqJF+BiS1XjTywdXHWsl+JorPcXgQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Zacharia Ahmad\\Downloads\\Code\\C#\\No Kill Cooldown\\NoKillCooldown.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Zacharia Ahmad\\.nuget\\packages\\reactor.oxygenfilter.msbuild\\0.3.0\\reactor.oxygenfilter.msbuild.0.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
