@@ -1,0 +1,6 @@
+.git/
+.github/
+.vs/
+NoKillCooldown/bin
+NoKillCooldown/obj
+build.cake
